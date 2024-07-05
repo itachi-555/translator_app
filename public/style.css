@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #444c4f;
+  padding: 0px 20px;
+  height: 100%;
+  width: 100%;
+}
+h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  margin-bottom: 80px;
+}
+.text-input {
+  width: 100%;
+  height: 20%;
+  background-color: #5d6568;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+  resize: none;
+  box-sizing: border-box;
+  overflow-wrap: break-word; /* Ensures the text wraps within the input */
+  white-space: pre-wrap; /* Preserves whitespace and wraps text */
+  font-size: x-large;
+  padding: 0 10px; /* Adjust padding to control the text position */
+  text-align: left; /* Align text to the left */
+  display: flex;
+  align-items: center;
+}
+
+.text-input::placeholder {
+    color: white;
+}
+.selectors {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+select {
+  border: none;
+  border-radius: 10px;
+  background-color: #5d6568;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.selectors button {
+  background-color: #ec3f77;
+  border: none;
+  padding: 20px 10px;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+}
+#submit {
+  margin-top: 20px;
+  font-size: larger;
+  border: none;
+  padding: 10px 30px;
+  color: white;
+  background-color: #ec3f77;
+  border-radius: 10px;
+  cursor: pointer; 
+}
+@media (max-width: 500px) { 
+  .selectors{
+    flex-direction: column;
+  }
+  .selectors button{
+    margin: 20px 0px;
+  }
+}

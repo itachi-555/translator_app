@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Translator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Translator</h1>
+      <textarea id="Word" class="text-input"> </textarea>
+      <div class="selectors">
+        <select name="Language" id="Language"></select>
+        <button id="switch">Switch</button>
+        <select name="ToLanguage" id="ToLanguage"></select>
+      </div>
+      <textarea
+        id="Translation"
+        class="text-input"
+        placeholder="Translation..."
+        readonly
+      ></textarea>
+      <input type="submit" value="Translate" id="submit" />
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
